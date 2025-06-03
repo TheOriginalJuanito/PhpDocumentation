@@ -1,0 +1,15 @@
+services:
+  php-public:
+    build:
+      context: ./public
+      dockerfile: ../Dockerfile
+    container_name: php-public
+    restart: unless-stopped
+    init: true
+    ports:
+      - "80:80"  # Expose Apache default port
+    # env_file: ./public/.env  # Uncomment if .env file exists
+    # No volumes needed as there is no database or persistent data
+    # No external dependencies detected
+    volumes:
+      - ./public:/var/www/html

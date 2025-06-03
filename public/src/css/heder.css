@@ -1,0 +1,26 @@
+
+header {
+    position: sticky;
+    top: 0px;
+    padding: 10px 10px;
+    z-index: 999;
+    background-color: white;
+
+}
+
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    background-color: white;
+
+}
+
+header nav ul li {
+    margin: 0 10px;
+    font-weight: bolder;
+}
+
+header nav ul a {
+    all: unset;
+}
