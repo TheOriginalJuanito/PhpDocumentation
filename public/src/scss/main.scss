@@ -1,0 +1,29 @@
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+
+    .mdContent {
+    width: calc(100vw - 300px);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    padding: 20px;
+    overflow-wrap: break-word;
+    }
+}
+
+
+@media (max-width:  768px) {
+    .mdContent {
+        width: 100vw;
+    }
+}
+@media (min-width:  1400px) {
+    main {
+        margin-left: 300px;
+        justify-content: center;
+    }
+    .mdContent {
+        width: 1100px;
+
+    }
+}

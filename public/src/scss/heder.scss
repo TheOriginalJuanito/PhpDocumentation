@@ -14,13 +14,13 @@ header nav ul{
     list-style-type: none;
     background-color: white;
 
-}
-
-header nav ul li {
+     li {
     margin: 0 10px;
     font-weight: bolder;
-}
+    }
 
-header nav ul a {
-    all: unset;
+    a {
+        all: unset;
+    }
+
 }
