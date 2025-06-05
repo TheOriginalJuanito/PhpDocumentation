@@ -19,6 +19,17 @@ WORKDIR /var/www/html
 # Copy application code (excluding .git, .env, etc. via .dockerignore)
 COPY --link . .
 
+# Install Node.js and npm, then sass (Dart Sass)
+RUN apt-get update \
+    && apt-get install -y curl gnupg \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
+    && npm install -g sass \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Compile SCSS to CSS (adjust paths as needed)
+RUN if [ -d src/scss ]; then sass src/scss:src/css; fi
 # Set permissions for non-root user
 RUN chown -R appuser:appgroup /var/www/html
 
