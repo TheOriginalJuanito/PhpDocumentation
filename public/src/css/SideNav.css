@@ -1,35 +1,31 @@
 .Sidenav {
-    position: fixed;
-    top: 50px;
-    left: 0px;
-    height: 100vh;
-    z-index: 1;
-    width: 240px;
-    padding: 0;
+  position: fixed;
+  top: 50px;
+  left: 0px;
+  height: 100vh;
+  z-index: 1;
+  width: 240px;
+  padding: 0;
 }
-
 .Sidenav li {
-    list-style-type: none;
-    width: 100%;
-    padding: 10px;
-    border-left: 5px solid lightblue;
+  list-style-type: none;
+  width: 100%;
+  padding: 10px;
+  border-left: 5px solid lightblue;
 }
-
 .Sidenav li:hover {
-    border-left: 5px solid rgb(139, 139, 255);
-       width: calc(100% - 5px);
-    background: rgb(231, 231, 231);
+  border-left: 5px solid rgb(139, 139, 255);
+  width: calc(100% - 5px);
+  background: rgb(231, 231, 231);
 }
-
-
 .Sidenav a {
-    all: unset;
+  all: unset;
 }
 
-
-@media (max-width:  768px) {
-
-    .Sidenav {
-        display: none;
-    }
+@media (max-width: 768px) {
+  .Sidenav {
+    display: none;
+  }
 }
+
+/*# sourceMappingURL=SideNav.css.map */

@@ -1,27 +1,23 @@
-
 header {
-    position: sticky;
-    top: 0px;
-    padding: 10px 10px;
-    z-index: 999;
+  position: sticky;
+  top: 0px;
+  padding: 10px 10px;
+  z-index: 999;
 }
-
-
-header nav ul{
-    display: flex;
-    list-style-type: none;
-    padding: 0;
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
 }
-
 header nav ul li:first-of-type {
-    margin: 0 0px;
+  margin: 0 0px;
 }
-
 header nav ul li {
-    margin: 0 10px;
-    font-weight: bolder;
+  margin: 0 10px;
+  font-weight: bolder;
+}
+header nav ul a {
+  all: unset;
 }
 
-header nav ul a {
-    all: unset;
-}
+/*# sourceMappingURL=heder.css.map */
