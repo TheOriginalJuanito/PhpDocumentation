@@ -25,18 +25,6 @@ RUN chown -R appuser:appgroup /var/www/html
 # Switch to non-root user
 USER appuser
 
-# Install Node.js and npm, then sass (Dart Sass)
-RUN apt-get update \
-    && apt-get install -y curl gnupg \
-    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
-    && apt-get install -y nodejs \
-    && npm install -g sass \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-
-# Compile SCSS to CSS (adjust paths as needed)
-RUN if [ -d public/src/scss ]; then sass public/src/scss:public/src/css; fi
-
 # Expose port 80 (default for Apache)
 EXPOSE 80
 

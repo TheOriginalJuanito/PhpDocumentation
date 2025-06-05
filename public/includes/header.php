@@ -25,6 +25,7 @@ require __DIR__ . '/../myconfig.php';
                 }
             }
         }
+        
         $current = isset($_GET['page']) ? $_GET['page'] : 'default'; 
 
         ?>
